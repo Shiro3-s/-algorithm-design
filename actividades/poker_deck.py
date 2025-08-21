@@ -61,7 +61,6 @@ class deck:
         return lista
 
     def decks_after_sort(self):
-        # We call separate_by_clubs() again to get the lists
         h_list, c_list, d_list, s_list = self.decks_before_sort()
         
         # We sort each list using the instance method
@@ -72,9 +71,9 @@ class deck:
         
         return h_list_sorted, c_list_sorted, d_list_sorted, s_list_sorted
 
-# --- Main part of the code ---
+#instance of the deck object
 my_deck_instance = deck()
-
+print(my_deck_instance.shuffle_deck())
 # Get the lists before sorting
 h_before, c_before, d_before, s_before = my_deck_instance.decks_before_sort()
 print("Listas antes del ordenamiento:")
