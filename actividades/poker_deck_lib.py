@@ -47,8 +47,7 @@ class deck:
             j = i - 1
             print(f"Clave actual: {key}, Índice: {i}")
             print(j)
-        # Mueve los elementos de la lista ordenada que son mayores que la 'key'
-        # a una posición adelante de su posición actual
+        # Mueve los elementos de la lista ordenada que son mayores que la 'key' a una posición adelante de su posición actual
             while j >= 0 and key < lista[j]:
                 print(lista)
                 lista[j + 1] = lista[j]
@@ -71,21 +70,3 @@ class deck:
         
         return h_list_sorted, c_list_sorted, d_list_sorted, s_list_sorted
 
-#instance of the deck object
-my_deck_instance = deck()
-print(my_deck_instance.shuffle_deck())
-# Get the lists before sorting
-h_before, c_before, d_before, s_before = my_deck_instance.decks_before_sort()
-print("Listas antes del ordenamiento:")
-print("Corazones:", h_before)
-print("Tréboles:", c_before)
-print("Diamantes:", d_before)
-print("Picas:", s_before)
-
-# Get the lists after sorting
-h_after, c_after, d_after, s_after = my_deck_instance.decks_after_sort()
-print("\nListas después del ordenamiento:")
-print("Corazones:", h_after)
-print("Tréboles:", c_after)
-print("Diamantes:", d_after)
-print("Picas:", s_after)
